@@ -3,6 +3,8 @@ import { join } from "node:path";
 
 const LINE = "The meeting was to discuss the spreadsheet, which was on the screen the entire time, and the spreadsheet had already answered every question before anyone spoke.";
 
+// The entry is one fixed sentence: this script writes it out verbatim and never alters a word of it.
+
 function main() {
   const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
   const target = join(outDir, "entry.txt");
